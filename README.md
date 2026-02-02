@@ -27,7 +27,7 @@ By default the Dice Oracles are available only to the GM, you can enable it to a
 
 1. **Parameters:**
    1. *Modifier*: add positive or negative numbers to modify the roll result.
-   2. *Roll Type*: the selected oracle can be rolled with advantage (roll twice the number of dice and keep the highest result) or disadvantage (roll twice the number of dices and keep the lowest result)
+   2. *Roll Type*: the selected oracle can be rolled with advantage (roll twice the number of dice and keep the highest result) or disadvantage (roll twice the number of dice and keep the lowest result)
    3. *Question*: An optional question to be displayed in the chat card result
 
 2. **Dice So Nice 3D Dice theme**
