@@ -24,6 +24,10 @@ Hooks.once("init", async function () {
     hint: "This will trigger the Dice Oracles modal.",
     editable: [{ key: "KeyO", modifiers: [] }],
     onDown: () => {
+      const permission = game.settings.get(moduleName, "permission");
+      if (!game.user.isGM && permission !== "players") {
+        return;
+      }
       window.game.diceOracles.consultOracles();
     },
     onUp: () => {},
@@ -41,7 +45,7 @@ Hooks.once("init", async function () {
   });
 
   game.settings.register(moduleName, "permission", {
-    name: game.i18n.localize("DiceOracles.Settings.PermissionName"),
+    name: game.i18n.localize("DiceOracles.Settings.Permission"),
     hint: game.i18n.localize("DiceOracles.Settings.PermissionHint"),
     scope: "world",
     config: true,

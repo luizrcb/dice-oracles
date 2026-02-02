@@ -360,7 +360,7 @@ export default class DiceOracles {
 
   <div class="form-group">
     <label>${game.i18n.localize("DiceOracles.RollModifier")}</label>
-    <input type="number" name="modifier" class="form-control" value="0" autofocus>
+    <input type="number" name="modifier" class="form-control" value="0">
   </div>
 
   <div class="form-group">
@@ -377,7 +377,7 @@ export default class DiceOracles {
 
   <div class="form-group">
     <label>${game.i18n.localize("DiceOracles.Question")}</label>
-    <textarea name="question" class="form-control" rows="2"></textarea>
+    <textarea name="question" class="form-control"></textarea>
   </div>
 </fieldset>
 `;
@@ -404,10 +404,9 @@ export default class DiceOracles {
       render: (event, dialog) => {
         const html = dialog.element;
 
-        const modifierInput = html.querySelector('input[name="modifier"]');
-        if (modifierInput) {
-          modifierInput.focus();
-          modifierInput.select();
+        const questionArea = html.querySelector('textarea[name="question"]');
+        if (questionArea) {
+          questionArea.placeholder = game.i18n.localize('DiceOracles.QuestionPlaceholder');
         }
 
         const inputs = html.querySelectorAll("input, select, textarea");
