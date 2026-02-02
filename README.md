@@ -34,3 +34,24 @@ By default the Dice Oracles are available only to the GM, you can enable it to a
 <p align="center">
   <img width="400" src="docs/3d_dice_theme.webp">
 </p>
+
+## Instalation
+
+You can use one of the following installation methods:
+
+1. Pasting the following url into the **Install Module** dialog on the Setup menu of the application.
+##
+    https://github.com/luizrcb/dice-oracles/releases/latest/download/module.json
+2. Browsing the repository's [Releases](https://github.com/luizrcb/dice-oracles/releases) page, where you can copy any module.json link for use in the Install Module dialog.
+3. Downloading one of the .zip archives from the Releases page and extracting it into your foundry Data folder, under `Data/modules/dice-oracles`.
+
+## Community
+
+- Do you have something to improve this module? [Share it!](https://github.com/luizrcb/dice-oracles/issues)
+- Did you find out a bug? [Report it!](https://github.com/luizrcb/dice-oracles/issues)
+
+## Licenses
+
+- **Source Code:** All source code files (javascript, css) are licensed under the [MIT License](https://en.wikipedia.org/wiki/MIT_License).
+- **Foundry VTT:** The project is created following the Foundry VTT [Limited License Agreement for module development](https://foundryvtt.com/article/license/).
+- **Fonts:** The fonts used in this project carry their own licenses.
