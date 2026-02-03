@@ -73,7 +73,7 @@ jobs:
 
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
 
       # Extract version embedded in the tag.
@@ -146,11 +146,11 @@ jobs:
           body: ${{ github.event.release.body }}
 
 
-       # Publish update to Foundry Admin interface via API
-      # - name: Publish Module to FoundryVTT Website
-      #   id: publish-to-foundry-website
-      #   uses: cs96and/FoundryVTT-release-package@v1
-      #   with:
-      #     package-token: ${{ secrets.PACKAGE_TOKEN }}
-      #     manifest-url: ${{ env.RELEASE_INSTALL_URL }}
-      #     notes-url: https://github.com/${{ github.repository }}/releases/tag/${{ env.TAG_NAME }}
+      # Publish update to Foundry Admin interface via API
+      - name: Publish Module to FoundryVTT Website
+        id: publish-to-foundry-website
+        uses: cs96and/FoundryVTT-release-package@v1
+        with:
+          package-token: ${{ secrets.PACKAGE_TOKEN }}
+          manifest-url: ${{ env.RELEASE_INSTALL_URL }}
+          notes-url: https://github.com/${{ github.repository }}/releases/tag/${{ env.TAG_NAME }}

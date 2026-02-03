@@ -497,6 +497,8 @@ export default class DiceOracles {
       ? game.i18n.localize(outcomeEntry.grade)
       : null;
 
+    let rollContent = await roll.render();
+    rollContent = rollContent.replaceAll('dice-oracles', '').replaceAll('[]', '');
     const content = `
 <div class="dice-oracles-result">
   <div class="dice-oracles-header">
@@ -505,7 +507,7 @@ export default class DiceOracles {
   </div>
 
   <div class="dice-oracles-roll">
-    <p><strong>${game.i18n.localize("DiceOracles.Roll")}:</strong> ${formula.replace(/\[[^\]]*\]/g, "")} = ${roll.total}</p>
+    ${rollContent}
     ${clampedResult !== roll.total ? `<p><strong>${game.i18n.localize("DiceOracles.Result")}:</strong> ${clampedResult} (${game.i18n.localize("DiceOracles.ClampedFrom")} ${roll.total})</p>` : ""}
   </div>
 
