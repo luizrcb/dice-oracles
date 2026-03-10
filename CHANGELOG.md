@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 0.3.0
+
+- Reorganized d10 oracle results
+
 ## 0.2.0
 
 - add rolled dice to the chat card
