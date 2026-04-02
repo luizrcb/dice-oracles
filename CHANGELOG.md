@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 1.0.0
+
+- Added support to v14
+
 ## 0.3.0
 
 - Reorganized d10 oracle results
