@@ -40,6 +40,9 @@
   ],
   "url": "https://github.com/luizrcb/dice-oracles",
   "bugs": "https://github.com/luizrcb/dice-oracles/issues",
+  "flags": {
+    "allowBugReporter": true
+  },
   "manifest": "#{MANIFEST}#",
   "download": "#{DOWNLOAD}#",
   "license": "LICENSE",
