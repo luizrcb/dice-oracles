@@ -244,6 +244,128 @@ export default class DiceOracles {
           },
         },
       },
+      "order-chaos-2d12": {
+        label: "DiceOracles.Label.order-chaos-2d12",
+        formula: `1d12[white]-1d12[black]`,
+        showGrade: true,
+        table: {
+          "-11": {
+            outcome: "DiceOracles.order-chaos-2d12.-11.outcome",
+            description: "DiceOracles.order-chaos-2d12.-11.description",
+            grade: "DiceOracles.order-chaos-2d12.-11.grade",
+          },
+          "-10": {
+            outcome: "DiceOracles.order-chaos-2d12.-10.outcome",
+            description: "DiceOracles.order-chaos-2d12.-10.description",
+            grade: "DiceOracles.order-chaos-2d12.-10.grade",
+          },
+          "-9": {
+            outcome: "DiceOracles.order-chaos-2d12.-9.outcome",
+            description: "DiceOracles.order-chaos-2d12.-9.description",
+            grade: "DiceOracles.order-chaos-2d12.-9.grade",
+          },
+          "-8": {
+            outcome: "DiceOracles.order-chaos-2d12.-8.outcome",
+            description: "DiceOracles.order-chaos-2d12.-8.description",
+            grade: "DiceOracles.order-chaos-2d12.-8.grade",
+          },
+          "-7": {
+            outcome: "DiceOracles.order-chaos-2d12.-7.outcome",
+            description: "DiceOracles.order-chaos-2d12.-7.description",
+            grade: "DiceOracles.order-chaos-2d12.-7.grade",
+          },
+          "-6": {
+            outcome: "DiceOracles.order-chaos-2d12.-6.outcome",
+            description: "DiceOracles.order-chaos-2d12.-6.description",
+            grade: "DiceOracles.order-chaos-2d12.-6.grade",
+          },
+          "-5": {
+            outcome: "DiceOracles.order-chaos-2d12.-5.outcome",
+            description: "DiceOracles.order-chaos-2d12.-5.description",
+            grade: "DiceOracles.order-chaos-2d12.-5.grade",
+          },
+          "-4": {
+            outcome: "DiceOracles.order-chaos-2d12.-4.outcome",
+            description: "DiceOracles.order-chaos-2d12.-4.description",
+            grade: "DiceOracles.order-chaos-2d12.-4.grade",
+          },
+          "-3": {
+            outcome: "DiceOracles.order-chaos-2d12.-3.outcome",
+            description: "DiceOracles.order-chaos-2d12.-3.description",
+            grade: "DiceOracles.order-chaos-2d12.-3.grade",
+          },
+          "-2": {
+            outcome: "DiceOracles.order-chaos-2d12.-2.outcome",
+            description: "DiceOracles.order-chaos-2d12.-2.description",
+            grade: "DiceOracles.order-chaos-2d12.-2.grade",
+          },
+          "-1": {
+            outcome: "DiceOracles.order-chaos-2d12.-1.outcome",
+            description: "DiceOracles.order-chaos-2d12.-1.description",
+            grade: "DiceOracles.order-chaos-2d12.-1.grade",
+          },
+          0: {
+            outcome: "DiceOracles.order-chaos-2d12.0.outcome",
+            description: "DiceOracles.order-chaos-2d12.0.description",
+            grade: "DiceOracles.order-chaos-2d12.0.grade",
+          },
+          1: {
+            outcome: "DiceOracles.order-chaos-2d12.1.outcome",
+            description: "DiceOracles.order-chaos-2d12.1.description",
+            grade: "DiceOracles.order-chaos-2d12.1.grade",
+          },
+          2: {
+            outcome: "DiceOracles.order-chaos-2d12.2.outcome",
+            description: "DiceOracles.order-chaos-2d12.2.description",
+            grade: "DiceOracles.order-chaos-2d12.2.grade",
+          },
+          3: {
+            outcome: "DiceOracles.order-chaos-2d12.3.outcome",
+            description: "DiceOracles.order-chaos-2d12.3.description",
+            grade: "DiceOracles.order-chaos-2d12.3.grade",
+          },
+          4: {
+            outcome: "DiceOracles.order-chaos-2d12.4.outcome",
+            description: "DiceOracles.order-chaos-2d12.4.description",
+            grade: "DiceOracles.order-chaos-2d12.4.grade",
+          },
+          5: {
+            outcome: "DiceOracles.order-chaos-2d12.5.outcome",
+            description: "DiceOracles.order-chaos-2d12.5.description",
+            grade: "DiceOracles.order-chaos-2d12.5.grade",
+          },
+          6: {
+            outcome: "DiceOracles.order-chaos-2d12.6.outcome",
+            description: "DiceOracles.order-chaos-2d12.6.description",
+            grade: "DiceOracles.order-chaos-2d12.6.grade",
+          },
+          7: {
+            outcome: "DiceOracles.order-chaos-2d12.7.outcome",
+            description: "DiceOracles.order-chaos-2d12.7.description",
+            grade: "DiceOracles.order-chaos-2d12.7.grade",
+          },
+          8: {
+            outcome: "DiceOracles.order-chaos-2d12.8.outcome",
+            description: "DiceOracles.order-chaos-2d12.8.description",
+            grade: "DiceOracles.order-chaos-2d12.8.grade",
+          },
+          9: {
+            outcome: "DiceOracles.order-chaos-2d12.9.outcome",
+            description: "DiceOracles.order-chaos-2d12.9.description",
+            grade: "DiceOracles.order-chaos-2d12.9.grade",
+          },
+          10: {
+            outcome: "DiceOracles.order-chaos-2d12.10.outcome",
+            description: "DiceOracles.order-chaos-2d12.10.description",
+            grade: "DiceOracles.order-chaos-2d12.10.grade",
+          },
+          11: {
+            outcome: "DiceOracles.order-chaos-2d12.11.outcome",
+            description: "DiceOracles.order-chaos-2d12.11.description",
+            grade: "DiceOracles.order-chaos-2d12.11.grade",
+          },
+        },
+      },
       "skilled-d20": {
         label: "DiceOracles.Label.skilled-d20",
         formula: `1d20[dice-oracles]`,
@@ -406,7 +528,9 @@ export default class DiceOracles {
 
         const questionArea = html.querySelector('textarea[name="question"]');
         if (questionArea) {
-          questionArea.placeholder = game.i18n.localize('DiceOracles.QuestionPlaceholder');
+          questionArea.placeholder = game.i18n.localize(
+            "DiceOracles.QuestionPlaceholder",
+          );
         }
 
         const inputs = html.querySelectorAll("input, select, textarea");
@@ -498,7 +622,14 @@ export default class DiceOracles {
       : null;
 
     let rollContent = await roll.render();
-    rollContent = rollContent.replaceAll('dice-oracles', '').replaceAll('[]', '');
+    rollContent = rollContent
+      .replaceAll("dice-oracles", "")
+      .replaceAll("[]", "");
+
+    if (game.system.id === "shadowdark") {
+      rollContent = this.reshapeForShadowdark(rollContent);
+    }
+
     const content = `
 <div class="dice-oracles-result">
   <div class="dice-oracles-header">
@@ -519,7 +650,7 @@ export default class DiceOracles {
 </div>
 `;
 
-    const chatMode = game.settings.get("core", "rollMode");
+    const chatMode = game.settings.get("core", "messageMode");
     let chatData = {
       content,
       speaker,
@@ -527,18 +658,91 @@ export default class DiceOracles {
       flavor: game.i18n.localize("DiceOracles.Result"),
     };
 
-    chatData = ChatMessage.applyRollMode(chatData, chatMode);
+    chatData = ChatMessage.applyMode(chatData, chatMode);
     await ChatMessage.create(chatData);
+  }
+
+  /**
+   * Reshape Foundry's generic roll.render() output into the structure
+   * the Shadowdark system expects, so its own stylesheet applies correctly.
+   *
+   * Core layout:
+   *   .dice-roll > .dice-result >
+   *       .dice-formula
+   *       .dice-tooltip (wrapped) > .wrapper > section.tooltip-part ...
+   *       h4.dice-total
+   *
+   * Shadowdark layout:
+   *   .dice-roll >
+   *       .dice-result > h4.dice-total, .dice-text > .dice-formula
+   *       .dice-tooltip > .wrapper > .roll-tooltips, section.tooltip-part ...
+   */
+  reshapeForShadowdark(html) {
+    const doc = new DOMParser().parseFromString(html, "text/html");
+    const root = doc.querySelector(".dice-roll");
+    const result = root?.querySelector(".dice-result");
+    if (!root || !result) return html;
+
+    const total = result.querySelector(".dice-total");
+    const formula = result.querySelector(".dice-formula");
+    const tooltip = root.querySelector(".dice-tooltip");
+
+    // 1. Move tooltip (and any wrapper like .dice-tooltip-collapser) out of
+    //    .dice-result so it becomes a direct child of .dice-roll.
+    if (tooltip) {
+      let mover = tooltip;
+      while (
+        mover.parentNode &&
+        mover.parentNode !== result &&
+        mover.parentNode !== root
+      ) {
+        mover = mover.parentNode;
+      }
+      if (mover.parentNode === result) root.appendChild(mover);
+
+      // Ensure .wrapper exists inside .dice-tooltip
+      let wrapper = tooltip.querySelector(".wrapper");
+      if (!wrapper) {
+        wrapper = doc.createElement("div");
+        wrapper.className = "wrapper";
+        while (tooltip.firstChild) wrapper.appendChild(tooltip.firstChild);
+        tooltip.appendChild(wrapper);
+      }
+
+      // Ensure .roll-tooltips placeholder exists at the top of .wrapper
+      if (!wrapper.querySelector(".roll-tooltips")) {
+        const rt = doc.createElement("div");
+        rt.className = "roll-tooltips";
+        wrapper.insertBefore(rt, wrapper.firstChild);
+      }
+    }
+
+    // 2. Move the total to the top of .dice-result
+    if (total && result.firstChild !== total) {
+      result.insertBefore(total, result.firstChild);
+    }
+
+    // 3. Wrap the formula in .dice-text
+    if (formula && !formula.parentElement?.classList.contains("dice-text")) {
+      const diceText = doc.createElement("div");
+      diceText.className = "dice-text";
+      formula.parentNode.insertBefore(diceText, formula);
+      diceText.appendChild(formula);
+    }
+
+    // 4. Shadowdark doesn't render .part-flavor
+    doc
+      .querySelectorAll(".part-header .part-flavor")
+      .forEach((el) => el.remove());
+
+    return root.outerHTML;
   }
 
   sanitizeExpression(rollExpression) {
     const cleaned = rollExpression
-      // First handle operator sequences
-      .replace(/\+-+/g, "-") // Convert "+-" to "-"
-      .replace(/(?<!^)-+/g, "-") // Ensure single "-"
-      .replace(/\++/g, "+") // Convert multiple "+" to single "+"
-
-      // Then clean edges and whitespace
+      .replace(/\+-+/g, "-")
+      .replace(/(?<!^)-+/g, "-")
+      .replace(/\++/g, "+")
       .replace(/(^[+ ]+)|([+ ]+$)/g, "")
       .replace(/\s+/g, "");
 

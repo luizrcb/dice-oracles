@@ -6,40 +6,69 @@
     background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
     color: #e0e0ff;
   }
+
   .dice-oracles-header {
     border-bottom: 1px solid #7c2da2;
     margin-bottom: 10px;
     padding-bottom: 5px;
   }
+
   .dice-oracles-header h5 {
     color: #e0aaff;
     margin: 0;
     font-size: 18px;
   }
+
   .dice-oracles-question {
     font-style: italic;
     color: #aaccff;
     margin-top: 5px;
     margin-bottom: 0;
   }
+
   .dice-oracles-roll {
-    background: rgba(124, 45, 162, 0.2);
-    padding: 8px;
-    border-radius: 3px;
-    margin: 10px 0;
+    background: rgba(124, 45, 162, 0.2) !important;
+    padding: 8px !important;
+    border-radius: 3px !important;
+    margin: 10px 0 !important;
   }
+
+  .dice-oracles-roll .dice-roll {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  .dice-oracles-roll .dice-formula,
+  .dice-oracles-roll .dice-total,
+  .dice-oracles-roll .dice-total .total,
+  .dice-oracles-roll .total,
+  .dice-oracles-roll .part-formula,
+  .dice-oracles-roll .part-total {
+    color: #e0e0ff !important;
+  }
+
+  .dice-oracles-roll .dice-formula::before,
+  .dice-oracles-roll .dice-formula::after,
+  .dice-oracles-roll .dice-total::before,
+  .dice-oracles-roll .dice-total::after {
+    color: inherit !important;
+  }
+
   .dice-oracles-outcome {
     background: rgba(224, 170, 255, 0.1);
     padding: 10px;
     border-radius: 3px;
     border-left: 3px solid #e0aaff;
-    margin: 10x 0;
+    margin: 10px 0;
     margin-bottom: 0;
   }
+
   .dice-oracles-outcome h6 {
     color: #e0aaff;
     margin: 0 0 5px 0;
   }
+
   .dice-oracles-details {
     font-size: 0.9em;
     color: #8888cc;
